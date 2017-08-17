@@ -42,3 +42,15 @@ Route::get('/', function () {
     	return view('tareas', compact('tareas'));
 
     } );
+
+    Route::get('/tareas',function() {
+        $tareas = DB::table('tareas')->get();
+        return view('tareas.index', compact('tareas'));
+
+    });
+
+    Route::get('/tareas/{id}', function($id) {
+       $tarea = DB::table('tareas')->find($id);
+        return view('tareas.show',compact('tarea'));
+
+    });
