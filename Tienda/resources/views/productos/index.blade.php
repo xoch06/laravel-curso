@@ -8,7 +8,7 @@
 <ul>
 	@foreach($products as $product)
 		@if($product->existencia ==1)
-			<li>{{ $product->descripcion}} - ${{$product->precio}}</li>
+			<li><a href="/detalle/{{ $product->id}}">{{$product->descripcion}}</a></li>
 		@endif
 	@endforeach
 </ul>
