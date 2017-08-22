@@ -10,13 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','ProductsContoller@index');
+Route::get('/detalle/{product}','ProductsContoller@show');
 
-Route::get('/', function () {
-	$products = App\Product::existencia();
-    return view('productos.index',compact('products'));
-});
 
-Route::get('/detalle/{id}', function($id) {
- $product = App\Product::find($id);
- return view('productos.detalle', compact('product'));
-});
+

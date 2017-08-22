@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Productos</title>
-</head>
-<body>
+@extends('layouts.master')
+@section('minombre')
+	<p>Xoch</p>
+@endsection
+
+@section('content')
 <h1>Tienda</h1>
 <ul>
 	@foreach($products as $product)
@@ -12,5 +12,4 @@
 		@endif
 	@endforeach
 </ul>
-</body>
-</html>
+@endsection
