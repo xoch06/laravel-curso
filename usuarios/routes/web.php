@@ -10,10 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/','PostsController@index');
-Route::get('/registro','RegistrationController@create');
-Route::get('/posts/create', 'PostsController@create');
-Route::get('/posts/{post}','PostsController@show');
 
-Route::post('/posts','PostsController@store');
-Route::post('/posts/{post}/comments','CommentsController@store');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

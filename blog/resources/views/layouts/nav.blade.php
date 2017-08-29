@@ -5,10 +5,12 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="/">Inicio</a></li>
       <li><a href="/posts/create">Publicar</a></li>
+      <li><a href="/register">Registro</a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
       <li><a href="/">Inicio</a></li>
       <li><a href="/posts/create">Publicar</a></li>
+      <li><a href="/register">Registro</a></li>
     </ul>
   </div>
 </nav>
